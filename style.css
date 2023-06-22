@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(./images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.menu{
+    background-color: rgb(0, 100, 0);
+    text-align: center;
+}
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ .active, .menu ul  a:hover{
+    background-color: #2bab0b;
+    border-radius: 3px;
+}
+.menu .fa {
+    margin-right: 10px;
+}
+.sub-menu {
+    display: none;
+}
+.menu ul  li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu ul  li:hover .sub-menu ul {
+    display: block;
+    margin: 10px;
+}
+.menu ul  li:hover .sub-menu ul li {
+    width: 180px;
+    padding: 10px;
+    border-bottom: 1px dotted;
+    color: #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul  li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+.menu ul  li:hover .sub-menu ul li a:hover{
+    color: #b2ff00;
+}
+.fa-angle-right {
+    float: right;
+}
+.sub-menu-2 {
+    display: none;
+}
+.turn-right:hover .sub-menu-2 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: #2bab0b;
+}
